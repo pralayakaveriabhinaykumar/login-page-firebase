@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <div id="login-page">
+  <div class="outer-wrapper" >
+    <div id="main-div" >
+        <!-- side 1(left) with background img of student styding -->
+      <div id="side1">
+        <img src="background-img.svg" alt="Background" /> 
+      </div>
+      <!-- side2 (right) with actual login page -->
+      <div id="login-form-wrapper" >
         <div id="login-form">
+          <div class="toggle-wrapper">
+            <label class="switch">
+              <input type="checkbox" id="loginToggle" />
+              <span class="slider"></span>
+            </label>
+            <span id="login-label">Student Login</span>
+          </div>
 
+          <h2>NBKRIST - QBank</h2>
+          <div id="form-fields">
+            <input type="text" placeholder="Student ID" /><br />
+            <input type="password" placeholder="Password" />
+          </div>
         </div>
-        <div id="bg-img">
-            
-        </div>
+      </div>
     </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
