@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="sign-in.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="outer-wrapper" >
+    <div id="main-div" >
+        <!-- side 1(left) with background img of student styding -->
+      <div id="side1">
+        <img src="student-signin-background.svg" alt="Background" /> 
+      </div>
+      <!-- side2 (right) with actual login page -->
+      <!-- <div id="login-form-wrapper" > -->
+        <div id="side2">
+          <h1 style="font-size: 40px; margin-bottom: 30px; ">Student Sign-in</h1>
+          <!-- <h5>Enter your credentials to explore</h5> -->
+          <form autocomplete="off" id="form-fields">
+            <div class="username-filed">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Enter your Roll No" autocomplete="off" />
+            </div>
+            <div class="password-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Enter your Password" value="" autocomplete="off" />
+            </div>
+            <div class="re-password-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Re-Enter your Password" value="" autocomplete="off" />
+            </div>
+          <button id="login-btn">Signin</button>
+          </form>
+
+          <p id="signin-with">Already have an account?<a href="log-in.html">  login-in</a></p>
+
+      </div>
+    <!-- </div> -->
+  </div>
+
+  <script src="sign-in.js"></script>
+</body>
+</html>

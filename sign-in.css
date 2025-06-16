@@ -42,7 +42,7 @@ body {
 
 #side1 {
   flex: 1;
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,13 +70,13 @@ input[type="password"] {
   border: 1px solid #92E3A9;
   border-radius: 10px;
 }
-.username-filed,.password-field {
+.username-filed,.password-field, .re-password-field {
   position: relative;
   width: 90%;
   margin: 10px auto;
 }
 
-.username-filed i,.password-field i {
+.username-filed i,.password-field i, .re-password-field i {
   position: absolute;
   top: 50%;
   left: 15px; /* Controls horizontal position */
@@ -85,7 +85,7 @@ input[type="password"] {
   pointer-events: none; /* Let clicks go to input */
 }
 
-.username-filed input, .password-field input {
+.username-filed input, .password-field input,.re-password-field input {
   width: 100%;
   padding: 10px 10px 10px 40px; /* left padding to make space for icon */
   border: 1px solid #aaa;
